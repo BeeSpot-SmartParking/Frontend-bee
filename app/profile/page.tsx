@@ -17,7 +17,7 @@ export default function ProfilePage() {
 
         <Tabs defaultValue="profile" className="mt-6">
           <TabsList className="grid w-full grid-cols-2 max-w-md">
-            <TabsTrigger value="profile">Profile</TabsTrigger>
+            <TabsTrigger value="profile"  className="back">Profile</TabsTrigger>
             <TabsTrigger value="reports">Reports</TabsTrigger>
           </TabsList>
 

@@ -126,7 +126,7 @@ export function ProfileForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="name">Full Name</Label>
-          <Input id="name" value={formData.name} onChange={(e) => handleChange("name", e.target.value)} required />
+          <Input id="name" value={formData.name} className="border-2 border-gray-400" onChange={(e) => handleChange("name", e.target.value)} required />
         </div>
         <div className="space-y-2">
           <Label htmlFor="email">Email</Label>
@@ -134,6 +134,7 @@ export function ProfileForm() {
             id="email"
             type="email"
             value={formData.email}
+            className="border-2 border-gray-400"
             onChange={(e) => handleChange("email", e.target.value)}
             required
           />
@@ -143,13 +144,13 @@ export function ProfileForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
           <Label htmlFor="phone">Phone Number</Label>
-          <Input id="phone" value={formData.phone} onChange={(e) => handleChange("phone", e.target.value)} />
+          <Input id="phone" placeholder="0778923299" className="border-2 border-gray-400" value={formData.phone} onChange={(e) => handleChange("phone", e.target.value)} />
         </div>
         <div className="space-y-2">
           <Label htmlFor="matricule">License Plate</Label>
           <Input
             id="matricule"
-            value={formData.matricule}
+            value={formData.matricule}   placeholder="0778923299" className="border-2 border-gray-400"
             onChange={(e) => handleChange("matricule", e.target.value)}
             required
           />
@@ -160,20 +161,20 @@ export function ProfileForm() {
         <Label htmlFor="emergency">Emergency Contact</Label>
         <Input
           id="emergency"
-          value={formData.emergencyContact}
+          value={formData.emergencyContact} className="border-2 border-gray-400"
           onChange={(e) => handleChange("emergencyContact", e.target.value)}
           placeholder="Name - Phone Number"
         />
       </div>
 
       <div className="border-t pt-4 mt-6">
-        <h3 className="text-lg font-medium mb-4">Change Password</h3>
+        <h3 className="text-lg font-medium mb-4" >Change Password</h3>
         <div className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="currentPassword">Current Password</Label>
             <Input
               id="currentPassword"
-              type="password"
+              type="password"  className="border-2 border-gray-400"
               value={formData.currentPassword}
               onChange={(e) => handleChange("currentPassword", e.target.value)}
               placeholder="Enter current password"
@@ -185,6 +186,7 @@ export function ProfileForm() {
               <Input
                 id="newPassword"
                 type="password"
+                className="border-2 border-gray-400"
                 value={formData.newPassword}
                 onChange={(e) => handleChange("newPassword", e.target.value)}
                 placeholder="Enter new password"
@@ -195,6 +197,7 @@ export function ProfileForm() {
               <Input
                 id="confirmNewPassword"
                 type="password"
+                className="border-2 border-gray-400"
                 value={formData.confirmNewPassword}
                 onChange={(e) => handleChange("confirmNewPassword", e.target.value)}
                 placeholder="Confirm new password"

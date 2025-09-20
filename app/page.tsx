@@ -33,7 +33,7 @@ export default function HomePage() {
 
   return (
     
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen ">
 
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
@@ -108,9 +108,9 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          <Card className="border-border bg-card hover:bg-accent/50 transition-colors group">
+          <Card className=" bg-card hover:bg-accent/50 transition-colors group">
             <CardHeader className="text-center">
-              <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-xl w-fit group-hover:bg-primary/20 transition-colors">
+              <div className="border-2  mx-auto mb-4 p-4 bg-primary/10 rounded-xl w-fit group-hover:bg-primary/20 transition-colors">
                 <Building2 className="h-8 w-8 text-primary" />
               </div>
               <CardTitle className="text-card-foreground text-xl">Company Dashboard</CardTitle>

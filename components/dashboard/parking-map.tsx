@@ -117,7 +117,7 @@ export function ParkingMap({ selectedLocation }: ParkingMapProps) {
               <MapPin className="h-5 w-5" />
               Parking Locations
               {selectedLocation && (
-                <Badge variant="outline" className="ml-2">
+                <Badge variant="outline" className="ml-2 ">
                   <Target className="h-3 w-3 mr-1" />
                   Near {selectedLocation.address}
                 </Badge>
@@ -166,7 +166,7 @@ export function ParkingMap({ selectedLocation }: ParkingMapProps) {
         </h3>
 
         {filteredSpots.length === 0 ? (
-          <Card className="border-border bg-card">
+          <Card className="border-border bg-accent/50 bg-card">
             <CardContent className="p-4 text-center">
               <MapPin className="h-8 w-8 text-muted-foreground mx-auto mb-2" />
               <p className="text-muted-foreground">No parking spots found in this area</p>

@@ -51,7 +51,7 @@ export default function BookingPage({ params }: BookingPageProps) {
           <p className="text-muted-foreground">Complete your reservation at {parkingData.name}</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 p-6 bg-slate-50 rounded-lg border border-slate-200 shadow-sm">
+        <div className="grid lg:grid-cols-3 gap-6 p-6 bg-gray-600 rounded-lg border border-slate-200 shadow-sm">
           <div className="lg:col-span-2">
             <ParkingDetails parking={parkingData} />
           </div>

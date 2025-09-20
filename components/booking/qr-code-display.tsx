@@ -79,7 +79,7 @@ export function QRCodeDisplay({ value, size = 200, className = "" }: QRCodeDispl
   }
 
   return (
-    <div className={`inline-block p-4 bg-white rounded-lg ${className}`}>
+    <div className={`inline-block p-4 bg-gray-500 rounded-lg ${className}`}>
       <canvas ref={canvasRef} className="border border-gray-200 rounded" style={{ maxWidth: "100%", height: "auto" }} />
     </div>
   )

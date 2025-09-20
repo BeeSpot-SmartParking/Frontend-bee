@@ -108,6 +108,7 @@ export function RegisterForm() {
         <Label htmlFor="name">Full Name</Label>
         <Input
           id="name"
+          className="border-1 border-gray-300"
           placeholder="Enter your full name"
           value={formData.name}
           onChange={(e) => handleChange("name", e.target.value)}
@@ -120,6 +121,7 @@ export function RegisterForm() {
         <Input
           id="email"
           type="email"
+          className="border-1 border-gray-300"
           placeholder="Enter your email"
           value={formData.email}
           onChange={(e) => handleChange("email", e.target.value)}
@@ -131,6 +133,7 @@ export function RegisterForm() {
         <Label htmlFor="matricule">License Plate</Label>
         <Input
           id="matricule"
+          className="border-1 border-gray-300"
           placeholder="Enter your license plate"
           value={formData.matricule}
           onChange={(e) => handleChange("matricule", e.target.value.toUpperCase())}
@@ -143,6 +146,8 @@ export function RegisterForm() {
         <div className="relative">
           <Input
             id="password"
+
+            className="border-1 border-gray-300"
             type={showPassword ? "text" : "password"}
             placeholder="Create a password"
             value={formData.password}
@@ -193,6 +198,7 @@ export function RegisterForm() {
         <div className="relative">
           <Input
             id="confirmPassword"
+            className="border-1 border-gray-300"
             type={showConfirmPassword ? "text" : "password"}
             placeholder="Confirm your password"
             value={formData.confirmPassword}

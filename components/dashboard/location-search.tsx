@@ -73,6 +73,7 @@ export function LocationSearch({ onLocationSelect }: LocationSearchProps) {
               id="location"
               placeholder="Enter address or landmark..."
               value={searchQuery}
+              className="border-1 border-gray-400"
               onChange={(e) => setSearchQuery(e.target.value)}
               onKeyPress={(e) => e.key === "Enter" && handleSearch()}
             />
@@ -84,11 +85,11 @@ export function LocationSearch({ onLocationSelect }: LocationSearchProps) {
 
         <div className="flex items-center gap-2">
           <div className="flex-1 border-t border-border"></div>
-          <span className="text-sm text-muted-foreground">or</span>
+          <span className="text-l text-muted-foreground">or</span>
           <div className="flex-1 border-t border-border"></div>
         </div>
 
-        <Button variant="outline" onClick={getCurrentLocation} disabled={isLoading} className="w-full bg-transparent">
+        <Button variant="outline" onClick={getCurrentLocation} disabled={isLoading} className="w-full bg-gray-200">
           <Navigation className="h-4 w-4 mr-2" />
           Use Current Location
         </Button>
