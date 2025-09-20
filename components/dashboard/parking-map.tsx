@@ -177,19 +177,19 @@ export function ParkingMap({ selectedLocation }: ParkingMapProps) {
           filteredSpots.map((spot) => (
             <Card
               key={spot.id}
-              className={`cursor-pointer transition-all border-border bg-card hover:bg-accent/50 ${
+              className={`cursor-pointer transition-all border-3  border-yellow-400 hover:bg-accent/50 ${
                 selectedSpot === spot.id ? "ring-2 ring-primary" : ""
               }`}
               onClick={() => setSelectedSpot(spot.id)}
             >
-              <CardContent className="p-4">
+              <CardContent className="p-4 ">
                 <div className="flex justify-between items-start mb-2">
                   <h4 className="font-medium text-card-foreground">{spot.name}</h4>
                   <Badge variant={spot.type === "public" ? "secondary" : "outline"}>{spot.type}</Badge>
                 </div>
 
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 ">
                     <Navigation className="h-4 w-4" />
                     {spot.distance}
                   </div>

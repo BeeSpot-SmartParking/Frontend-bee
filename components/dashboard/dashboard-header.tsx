@@ -52,9 +52,7 @@ export function DashboardHeader() {
               <Link href="/reservations" className="text-muted-foreground hover:text-foreground transition-colors">
                 Reservations
               </Link>
-              <Link href="/favorites" className="text-muted-foreground hover:text-foreground transition-colors">
-                Favorites
-              </Link>
+             
               <Link href="/profile" className="text-muted-foreground hover:text-foreground transition-colors">
                 Profile
               </Link>

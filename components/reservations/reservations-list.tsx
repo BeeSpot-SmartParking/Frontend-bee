@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import QRCode from 'react-qr-code';
 import { QrCode, MapPin, Clock, Calendar } from "lucide-react"
 
 interface ReservationsListProps {
@@ -99,7 +100,16 @@ export function ReservationsList({ type }: ReservationsListProps) {
             <div className="flex gap-2">
               {reservation.status === "active" && (
                 <Button className="flex-1">
-                  <QrCode className="mr-2 h-4 w-4" />
+                
+                  <div style={{ background: 'white', padding: '16px' }}>
+                    <QRCode
+                      value={url}
+                       size={256}
+                       style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
+                        viewBox={`0 0 256 256`}
+                        className="mr-2 h-4 w-4" 
+                  />
+                </div>
                   Show QR Code
                 </Button>
               )}
