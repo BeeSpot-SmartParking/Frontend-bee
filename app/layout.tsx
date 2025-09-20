@@ -7,9 +7,11 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "ParkSpace - Parking Management System",
+  title: "BeeSpot - Parking Management System",
   description: "Comprehensive parking management platform for consumers, companies, and administrators",
-  generator: "v0.app",
+  generator: "Next.js",
+  applicationName: "BeeSpot",
+  referrer: "origin-when-cross-origin",
 }
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ export default function CompanyRegisterPage() {
       <Card className="w-full max-w-2xl border-border bg-card">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl text-card-foreground">Register Your Company</CardTitle>
-          <CardDescription>Join ParkSpace to manage your parking spaces</CardDescription>
+          <CardDescription>Join BeeSpot to manage your parking spaces</CardDescription>
         </CardHeader>
         <CardContent>
           <CompanyRegisterForm />

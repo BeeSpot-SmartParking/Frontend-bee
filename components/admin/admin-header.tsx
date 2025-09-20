@@ -29,7 +29,7 @@ export function AdminHeader() {
           <div className="flex items-center space-x-6">
             <Link href="/admin/dashboard" className="flex items-center space-x-2">
               <Shield className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold text-card-foreground">ParkSpace Admin</span>
+              <span className="text-xl font-bold text-card-foreground">BeeSpot Admin</span>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-6">
@@ -63,7 +63,7 @@ export function AdminHeader() {
                 <DropdownMenuLabel className="font-normal">
                   <div className="flex flex-col space-y-1">
                     <p className="text-sm font-medium leading-none">System Admin</p>
-                    <p className="text-xs leading-none text-muted-foreground">admin@parkspace.com</p>
+                    <p className="text-xs leading-none text-muted-foreground">admin@beespot.com</p>
                   </div>
                 </DropdownMenuLabel>
                 <DropdownMenuSeparator />
