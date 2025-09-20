@@ -42,7 +42,7 @@ export function DashboardHeader() {
           <div className="flex items-center space-x-6">
             <Link href="/dashboard" className="flex items-center space-x-2">
               <Car className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold text-card-foreground">ParkSpace</span>
+              <span className="text-xl font-bold text-card-foreground">BeeSpot</span>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-6">

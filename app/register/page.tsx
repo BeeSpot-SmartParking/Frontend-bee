@@ -8,7 +8,7 @@ export default function RegisterPage() {
       <Card className="w-full max-w-md border-border bg-card">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl text-card-foreground">Create Account</CardTitle>
-          <CardDescription>Join ParkSpace to start booking parking spots</CardDescription>
+          <CardDescription>Join BeeSpot to start booking parking spots</CardDescription>
         </CardHeader>
         <CardContent>
           <RegisterForm />

@@ -29,7 +29,7 @@ export function CompanyHeader() {
           <div className="flex items-center space-x-6">
             <Link href="/company/dashboard" className="flex items-center space-x-2">
               <Building2 className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold text-card-foreground">ParkSpace Business</span>
+              <span className="text-xl font-bold text-card-foreground">BeeSpot Business</span>
             </Link>
 
             <nav className="hidden md:flex items-center space-x-6">
