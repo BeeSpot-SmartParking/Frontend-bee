@@ -101,15 +101,15 @@ export function ReservationsList({ type }: ReservationsListProps) {
               {reservation.status === "active" && (
                 <Button className="flex-1">
                 
-                  <div style={{ background: 'white', padding: '16px' }}>
+                  {/* <div style={{ background: 'white', padding: '16px' }}>
                     <QRCode
-                      value={url}
+                      value={"jeu"}
                        size={256}
                        style={{ height: 'auto', maxWidth: '100%', width: '100%' }}
                         viewBox={`0 0 256 256`}
                         className="mr-2 h-4 w-4" 
                   />
-                </div>
+                </div> */}
                   Show QR Code
                 </Button>
               )}
